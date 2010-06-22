@@ -10,7 +10,7 @@ FBP::Window - Base class for all graphical wxWindow objects
 
 use Moose;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 extends 'FBP::Object';
 with    'FBP::Children';
@@ -65,6 +65,16 @@ The C<enabled> method indicates if the object is enabled or not.
 has enabled => (
 	is  => 'ro',
 	isa => 'Bool',
+);
+
+has pos => (
+	is  => 'ro',
+	isa => 'Str',
+);
+
+has size => (
+	is  => 'ro',
+	isa => 'Str',
 );
 
 1;
