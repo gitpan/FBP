@@ -2,9 +2,15 @@ package FBP::Project;
 
 use Moose;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
-extends 'FBP::Parent';
+extends 'FBP::Object';
+with    'FBP::Children';
+
+has internationalize => (
+	is  => 'ro',
+	isa => 'Bool',
+);
 
 sub dialogs {
 	return grep { 

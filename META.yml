@@ -24,7 +24,7 @@ no_index:
     - xt
 requires:
   IO::File: 1.14
-  Moose: 0.92
+  Moose: 1.05
   Params::Util: 1.00
   XML::SAX: 0.96
   perl: 5.8.5
@@ -32,4 +32,4 @@ resources:
   ChangeLog: http://fisheye2.atlassian.com/changelog/cpan/trunk/FBP
   license: http://dev.perl.org/licenses/
   repository: http://svn.ali.as/cpan/trunk/FBP
-version: 0.01
+version: 0.02
