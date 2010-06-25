@@ -1,5 +1,10 @@
 Changes for Perl extension FBP
 
+0.05 Fri 25 Jun 2010
+	- Switching to Mouse so we don't have to load Moose in Padre
+	- Added FBP::ComboBox::value attribute
+	- Added FBP::ComboBox::style attribute
+
 0.04 Wed 23 Jun 2010
 	- Added FBP::Control    role
 	- Added FBP::CheckBox   class
