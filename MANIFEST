@@ -13,6 +13,7 @@ lib/FBP/BoxSizer.pm
 lib/FBP/Button.pm
 lib/FBP/CheckBox.pm
 lib/FBP/Children.pm
+lib/FBP/Choice.pm
 lib/FBP/ComboBox.pm
 lib/FBP/Control.pm
 lib/FBP/Dialog.pm
