@@ -18,6 +18,7 @@ lib/FBP/ComboBox.pm
 lib/FBP/Control.pm
 lib/FBP/Dialog.pm
 lib/FBP/HtmlWindow.pm
+lib/FBP/ListBox.pm
 lib/FBP/ListCtrl.pm
 lib/FBP/Object.pm
 lib/FBP/Parser.pm
