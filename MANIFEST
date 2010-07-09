@@ -17,9 +17,12 @@ lib/FBP/Choice.pm
 lib/FBP/ComboBox.pm
 lib/FBP/Control.pm
 lib/FBP/Dialog.pm
+lib/FBP/FocusEvent.pm
 lib/FBP/HtmlWindow.pm
+lib/FBP/KeyEvent.pm
 lib/FBP/ListBox.pm
 lib/FBP/ListCtrl.pm
+lib/FBP/MouseEvent.pm
 lib/FBP/Object.pm
 lib/FBP/Parser.pm
 lib/FBP/Project.pm
