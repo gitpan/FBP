@@ -1,13 +1,10 @@
-package FBP::Control;
+package FBP::Panel;
 
-use Mouse::Role;
+use Mouse;
 
 our $VERSION = '0.11';
 
-has default => (
-	is  => 'ro',
-	isa => 'Bool',
-);
+extends 'FBP::Window';
 
 has permission => (
 	is       => 'ro',
