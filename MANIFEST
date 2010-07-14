@@ -18,6 +18,7 @@ lib/FBP/ComboBox.pm
 lib/FBP/Control.pm
 lib/FBP/Dialog.pm
 lib/FBP/FocusEvent.pm
+lib/FBP/GridSizer.pm
 lib/FBP/HtmlWindow.pm
 lib/FBP/KeyEvent.pm
 lib/FBP/ListBox.pm
