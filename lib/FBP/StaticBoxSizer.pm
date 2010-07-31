@@ -1,12 +1,12 @@
-package FBP::Dialog;
+package FBP::StaticBoxSizer;
 
 use Mouse;
 
 our $VERSION = '0.13';
 
-extends 'FBP::Window';
+extends 'FBP::BoxSizer';
 
-has style => (
+has label => (
 	is  => 'ro',
 	isa => 'Str',
 );
