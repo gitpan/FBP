@@ -2,10 +2,9 @@ package FBP::ListBox;
 
 use Mouse;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
-extends 'FBP::Window';
-with    'FBP::Control';
+extends 'FBP::ControlWithItems';
 
 has style => (
 	is  => 'ro',

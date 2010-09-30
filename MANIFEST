@@ -16,6 +16,7 @@ lib/FBP/Children.pm
 lib/FBP/Choice.pm
 lib/FBP/ComboBox.pm
 lib/FBP/Control.pm
+lib/FBP/ControlWithItems.pm
 lib/FBP/Dialog.pm
 lib/FBP/FlexGridSizer.pm
 lib/FBP/FocusEvent.pm

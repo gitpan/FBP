@@ -2,10 +2,9 @@ package FBP::StaticLine;
 
 use Mouse;
 
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
-extends 'FBP::Window';
-with    'FBP::Control';
+extends 'FBP::Control';
 
 has style => (
 	is  => 'ro',
