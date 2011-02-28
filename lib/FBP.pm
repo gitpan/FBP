@@ -54,17 +54,21 @@ use FBP::ComboBox       ();
 use FBP::FlexGridSizer  ();
 use FBP::GridSizer      ();
 use FBP::HtmlWindow     ();
+use FBP::Listbook       ();
+use FBP::ListbookPage   ();
 use FBP::ListBox        ();
 use FBP::ListCtrl       ();
 use FBP::Panel          ();
 use FBP::SizerItem      ();
 use FBP::Spacer         ();
+use FBP::SplitterItem   ();
+use FBP::SplitterWindow ();
 use FBP::StaticBoxSizer ();
 use FBP::StaticText     ();
 use FBP::StaticLine     ();
 use FBP::TextCtrl       ();
 
-our $VERSION = '0.16';
+our $VERSION = '0.17';
 
 extends 'FBP::Object';
 with    'FBP::Children';
@@ -172,7 +176,7 @@ Adam Kennedy E<lt>adamk@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2009 - 2010 Adam Kennedy.
+Copyright 2009 - 2011 Adam Kennedy.
 
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.

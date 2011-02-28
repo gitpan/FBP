@@ -23,6 +23,8 @@ lib/FBP/FocusEvent.pm
 lib/FBP/GridSizer.pm
 lib/FBP/HtmlWindow.pm
 lib/FBP/KeyEvent.pm
+lib/FBP/Listbook.pm
+lib/FBP/ListbookPage.pm
 lib/FBP/ListBox.pm
 lib/FBP/ListCtrl.pm
 lib/FBP/MouseEvent.pm
@@ -33,6 +35,8 @@ lib/FBP/Project.pm
 lib/FBP/Sizer.pm
 lib/FBP/SizerItem.pm
 lib/FBP/Spacer.pm
+lib/FBP/SplitterItem.pm
+lib/FBP/SplitterWindow.pm
 lib/FBP/StaticBoxSizer.pm
 lib/FBP/StaticLine.pm
 lib/FBP/StaticText.pm

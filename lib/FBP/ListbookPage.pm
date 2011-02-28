@@ -1,4 +1,4 @@
-package FBP::SizerItem;
+package FBP::ListbookPage;
 
 use Mouse;
 
@@ -7,17 +7,12 @@ our $VERSION = '0.17';
 extends 'FBP::Object';
 with    'FBP::Children';
 
-has proportion => (
-	is  => 'ro',
-	isa => 'Int',
-);
-
-has flag => (
+has label => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has border => (
+has select => (
 	is  => 'ro',
 	isa => 'Int',
 );
