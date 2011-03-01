@@ -1,27 +1,27 @@
-package FBP::HtmlWindow;
+package FBP::FilePickerCtrl;
 
 use Mouse;
 
 our $VERSION = '0.19';
 
-extends 'FBP::Window';
+extends 'FBP::Control';
 
-has style => (
+has value => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnHtmlCellClicked => (
+has message => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnHtmlCellHover => (
+has wildcard => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnHtmlLinkClicked => (
+has OnFileChanged => (
 	is  => 'ro',
 	isa => 'Str',
 );

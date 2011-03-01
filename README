@@ -36,6 +36,7 @@ METHODS
     Convience method which finds and returns the root FBP::Dialog object for
     a specific named dialog box in the object model.
 
+  parse_file
       my $ok = $fbp->parse_file('foo/bar.fbp');
 
     The "parse_file" method takes a named fbp project file, and parses it to

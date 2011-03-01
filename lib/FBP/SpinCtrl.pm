@@ -1,22 +1,27 @@
-package FBP::ListBox;
+package FBP::SpinCtrl;
 
 use Mouse;
 
 our $VERSION = '0.19';
 
-extends 'FBP::ControlWithItems';
+extends 'FBP::Control';
 
-has style => (
+has value => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListBox => (
+has min => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListDClick => (
+has max => (
+	is  => 'ro',
+	isa => 'Str',
+);
+
+has initial => (
 	is  => 'ro',
 	isa => 'Str',
 );
