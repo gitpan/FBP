@@ -18,6 +18,7 @@ lib/FBP/ColourPickerCtrl.pm
 lib/FBP/ComboBox.pm
 lib/FBP/Control.pm
 lib/FBP/ControlWithItems.pm
+lib/FBP/CustomControl.pm
 lib/FBP/Dialog.pm
 lib/FBP/DirPickerCtrl.pm
 lib/FBP/FilePickerCtrl.pm
