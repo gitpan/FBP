@@ -1,33 +1,33 @@
-package FBP::GridSizer;
+package FBP::RadioBox;
 
 use Mouse;
 
 our $VERSION = '0.28';
 
-extends 'FBP::Sizer';
+extends 'FBP::ControlWithItems';
 
-has rows => (
+has label => (
+	is       => 'ro',
+	isa      => 'Str',
+	required => 1,
+	default  => '',
+);
+
+has selection => (
 	is       => 'ro',
 	isa      => 'Int',
 	required => 1,
 );
 
-has cols => (
+has majorDimension => (
 	is       => 'ro',
 	isa      => 'Int',
 	required => 1,
 );
 
-has vgap => (
+has OnRadioBox => (
 	is       => 'ro',
-	isa      => 'Int',
-	required => 1,
-);
-
-has hgap => (
-	is       => 'ro',
-	isa      => 'Int',
-	required => 1,
+	isa      => 'Str',
 );
 
 1;

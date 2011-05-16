@@ -37,6 +37,7 @@ lib/FBP/Object.pm
 lib/FBP/Panel.pm
 lib/FBP/Parser.pm
 lib/FBP/Project.pm
+lib/FBP/RadioBox.pm
 lib/FBP/Sizer.pm
 lib/FBP/SizerItem.pm
 lib/FBP/Spacer.pm
