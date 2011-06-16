@@ -1,32 +1,32 @@
-package FBP::SpinCtrl;
+package FBP::BitmapButton;
 
 use Mouse;
 
 our $VERSION = '0.30';
 
-extends 'FBP::Control';
+extends 'FBP::Button';
 
-has value => (
+has bitmap => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has min => (
+has disabled => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has max => (
+has selected => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has initial => (
+has focus => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has style => (
+has hover => (
 	is  => 'ro',
 	isa => 'Str',
 );

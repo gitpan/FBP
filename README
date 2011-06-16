@@ -30,11 +30,25 @@ METHODS
     The "new" constructor takes no arguments and creates a new parser/model
     object.
 
+  project
+      my $project = $FBP->project;
+
+    Finds and returns the FBP::Project object for the FBP file, of which
+    there should only be one. Throws an exception if the file does not
+    contains a project.
+
+  form
+      my $form = $FBP->form('MyDialog1');
+
+    Convenience method which finds and returns the root FBP::Form object for
+    a specific named dialog, frame, panel, menu or toolbar in the object
+    model.
+
   dialog
       my $dialog = $fbp->dialog('MyDialog1');
 
-    Convience method which finds and returns the root FBP::Dialog object for
-    a specific named dialog box in the object model.
+    Convenience method which finds and returns the root FBP::Dialog object
+    for a specific named dialog box in the object model.
 
   parse_file
       my $ok = $fbp->parse_file('foo/bar.fbp');

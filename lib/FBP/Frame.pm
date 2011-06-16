@@ -1,4 +1,4 @@
-package FBP::Dialog;
+package FBP::Frame;
 
 use Mouse;
 

@@ -6,8 +6,9 @@ BEGIN {
 	$^W = 1;
 }
 
-use Test::More tests => 152;
+use Test::More tests => 169;
 use Test::NoWarnings;
+use Scalar::Util 'refaddr';
 use File::Spec::Functions ':ALL';
 use FBP ();
 
@@ -33,13 +34,18 @@ is( $@, '', "Parsed '$FILE' without error" );
 ok( $ok, '->parse_file returned true' );
 
 # Check the project properties
-my $project = $object->find_first( isa => 'FBP::Project' );
+my $project = $object->project;
 isa_ok( $project, 'FBP::Project' );
+is( $project->name, 'Simple', '->name ok' );
+is( $project->relative_path, '1', '->relative_path ok' );
 is( $project->internationalize, '1', '->internationalize ok' );
 
 # Find a particular named dialog
 my $dialog1 = $object->dialog('MyDialog1');
 isa_ok( $dialog1, 'FBP::Dialog' );
+my $form1 = $object->form('MyDialog1');
+isa_ok( $dialog1, 'FBP::Dialog' );
+is( refaddr($form1), refaddr($dialog1), 'Got the same thing with ->form and ->dialog' );
 is( $dialog1->name,     'MyDialog1',  '->name ok'     );
 is( $dialog1->subclass, '',           '->subclass ok' );
 is( $dialog1->wxclass,  'Wx::Dialog', '->class ok'    );
@@ -67,10 +73,22 @@ isa_ok( $dialog4[0], 'FBP::Dialog' );
 
 # Multiple-search query with multiple results
 my @window = $project->find( isa => 'FBP::Window' );
-is( scalar(@window), 31, '->find(multiple) ok' );
+is( scalar(@window), 38, '->find(multiple) ok' );
 foreach ( @window ) {
 	isa_ok( $_, 'FBP::Window' );
 }
+
+# Frame properties
+my $frame1 = $object->form('MyFrame1');
+isa_ok( $frame1, 'FBP::Frame' );
+ok( $frame1->DOES('FBP::Form'), 'DOES FBP::Form' );
+can_ok( $frame1, 'OnInitDialog' );
+
+# Top level Panel properties
+my $panel1 = $object->form('MyPanel1');
+isa_ok( $panel1, 'FBP::FormPanel' );
+isa_ok( $panel1, 'FBP::Panel' );
+ok( $panel1->DOES('FBP::Form'), 'DOES FBP::Form' );
 
 # Text properties
 my $text = $object->find_first(

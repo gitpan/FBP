@@ -9,6 +9,7 @@ inc/Module/Install/Metadata.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/FBP.pm
+lib/FBP/BitmapButton.pm
 lib/FBP/BoxSizer.pm
 lib/FBP/Button.pm
 lib/FBP/CheckBox.pm
@@ -25,6 +26,9 @@ lib/FBP/FilePickerCtrl.pm
 lib/FBP/FlexGridSizer.pm
 lib/FBP/FocusEvent.pm
 lib/FBP/FontPickerCtrl.pm
+lib/FBP/Form.pm
+lib/FBP/FormPanel.pm
+lib/FBP/Frame.pm
 lib/FBP/GridSizer.pm
 lib/FBP/HtmlWindow.pm
 lib/FBP/KeyEvent.pm
@@ -48,6 +52,7 @@ lib/FBP/StaticBoxSizer.pm
 lib/FBP/StaticLine.pm
 lib/FBP/StaticText.pm
 lib/FBP/TextCtrl.pm
+lib/FBP/TopLevelWindow.pm
 lib/FBP/Window.pm
 LICENSE
 Makefile.PL
@@ -61,6 +66,7 @@ t/04_padre.t
 t/data/padre.fbp
 t/data/simple.fbp
 t/data/trivial.fbp
+t/data/x-document-close.png
 xt/meta.t
 xt/pmv.t
 xt/pod.t
