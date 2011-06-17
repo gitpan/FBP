@@ -7,7 +7,7 @@ use Params::Util   ();
 use XML::SAX::Base ();
 use FBP            ();
 
-our $VERSION = '0.30';
+our $VERSION = '0.31';
 our @ISA     = 'XML::SAX::Base';
 
 # Object XML class to Perl class mapping
@@ -29,13 +29,16 @@ my %OBJECT_CLASS = (
 	wxFilePickerCtrl   => 'FBP::FilePickerCtrl',
 	wxFlexGridSizer    => 'FBP::FlexGridSizer',
 	wxFontPickerCtrl   => 'FBP::FontPickerCtrl',
+	wxGauge            => 'FBP::Gauge',
 	wxGridSizer        => 'FBP::GridSizer',
 	wxHtmlWindow       => 'FBP::HtmlWindow',
+	wxHyperlinkCtrl    => 'FBP::HyperLink',
 	wxListbook         => 'FBP::Listbook',
 	wxListBox          => 'FBP::ListBox',
 	wxListCtrl         => 'FBP::ListCtrl',
 	wxPanel            => 'FBP::Panel',
 	wxRadioBox         => 'FBP::RadioBox',
+	wxSearchCtrl       => 'FBP::SearchCtrl',
 	wxSpinCtrl         => 'FBP::SpinCtrl',
 	wxSplitterWindow   => 'FBP::SplitterWindow',
 	wxStaticBoxSizer   => 'FBP::StaticBoxSizer',

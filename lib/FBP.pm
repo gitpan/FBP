@@ -57,14 +57,17 @@ use FBP::FlexGridSizer    ();
 use FBP::FontPickerCtrl   ();
 use FBP::FormPanel        ();
 use FBP::Frame            ();
+use FBP::Gauge            ();
 use FBP::GridSizer        ();
 use FBP::HtmlWindow       ();
+use FBP::HyperLink        ();
 use FBP::Listbook         ();
 use FBP::ListbookPage     ();
 use FBP::ListBox          ();
 use FBP::ListCtrl         ();
 use FBP::Panel            ();
 use FBP::RadioBox         ();
+use FBP::SearchCtrl       ();
 use FBP::SizerItem        ();
 use FBP::Spacer           ();
 use FBP::SpinCtrl         ();
@@ -75,7 +78,7 @@ use FBP::StaticText       ();
 use FBP::StaticLine       ();
 use FBP::TextCtrl         ();
 
-our $VERSION = '0.30';
+our $VERSION = '0.31';
 
 extends 'FBP::Object';
 with    'FBP::Children';

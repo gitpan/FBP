@@ -1,4 +1,4 @@
-package FBP::TextCtrl;
+package FBP::SearchCtrl;
 
 use Mouse;
 
@@ -25,9 +25,16 @@ has style => (
 	isa      => 'Str',
 );
 
-has maxlength => (
+has search_button => (
 	is       => 'ro',
-	isa      => 'Int',
+	isa      => 'Bool',
+	required => 1,
+	default  => 0,
+);
+
+has cancel_button => (
+	is       => 'ro',
+	isa      => 'Bool',
 	required => 1,
 	default  => 0,
 );
@@ -49,12 +56,12 @@ has OnTextEnter => (
 	isa => 'Str',
 );
 
-has OnTextURL => (
+has OnSearchButton => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnTextMaxLen => (
+has OnCancelButton => (
 	is  => 'ro',
 	isa => 'Str',
 );
