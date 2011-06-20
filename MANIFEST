@@ -38,6 +38,10 @@ lib/FBP/Listbook.pm
 lib/FBP/ListbookPage.pm
 lib/FBP/ListBox.pm
 lib/FBP/ListCtrl.pm
+lib/FBP/Menu.pm
+lib/FBP/MenuBar.pm
+lib/FBP/MenuItem.pm
+lib/FBP/MenuSeparator.pm
 lib/FBP/MouseEvent.pm
 lib/FBP/Object.pm
 lib/FBP/Panel.pm
@@ -54,7 +58,11 @@ lib/FBP/SplitterWindow.pm
 lib/FBP/StaticBoxSizer.pm
 lib/FBP/StaticLine.pm
 lib/FBP/StaticText.pm
+lib/FBP/StatusBar.pm
 lib/FBP/TextCtrl.pm
+lib/FBP/Tool.pm
+lib/FBP/ToolBar.pm
+lib/FBP/ToolSeparator.pm
 lib/FBP/TopLevelWindow.pm
 lib/FBP/Window.pm
 LICENSE

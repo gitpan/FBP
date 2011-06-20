@@ -1,10 +1,10 @@
-package FBP::Gauge;
+package FBP::MenuBar;
 
 use Mouse;
 
 our $VERSION = '0.32';
 
-extends 'FBP::Control';
+extends 'FBP::Window';
 
 
 
@@ -13,14 +13,11 @@ extends 'FBP::Control';
 ######################################################################
 # Properties
 
-has value => (
+has label => (
 	is       => 'ro',
-	isa      => 'Int',
-);
-
-has range => (
-	is       => 'ro',
-	isa      => 'Int',
+	isa      => 'Str',
+	required => 1,
+	default  => '',
 );
 
 has style => (

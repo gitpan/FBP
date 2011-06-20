@@ -1,32 +1,32 @@
-package FBP::BitmapButton;
+package FBP::ToolBar;
 
 use Mouse;
 
 our $VERSION = '0.32';
 
-extends 'FBP::Button';
+extends 'FBP::Window';
 
-has bitmap => (
+has bitmapsize => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has disabled => (
+has margins => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has selected => (
+has packing => (
 	is  => 'ro',
-	isa => 'Str',
+	isa => 'Int',
 );
 
-has focus => (
+has separation => (
 	is  => 'ro',
-	isa => 'Str',
+	isa => 'Int',
 );
 
-has hover => (
+has style => (
 	is  => 'ro',
 	isa => 'Str',
 );

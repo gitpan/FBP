@@ -1,10 +1,10 @@
-package FBP::Gauge;
+package FBP::StatusBar;
 
 use Mouse;
 
 our $VERSION = '0.32';
 
-extends 'FBP::Control';
+extends 'FBP::Window';
 
 
 
@@ -13,12 +13,7 @@ extends 'FBP::Control';
 ######################################################################
 # Properties
 
-has value => (
-	is       => 'ro',
-	isa      => 'Int',
-);
-
-has range => (
+has fields => (
 	is       => 'ro',
 	isa      => 'Int',
 );
