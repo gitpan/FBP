@@ -12,6 +12,7 @@ lib/FBP.pm
 lib/FBP/BitmapButton.pm
 lib/FBP/BoxSizer.pm
 lib/FBP/Button.pm
+lib/FBP/CalendarCtrl.pm
 lib/FBP/CheckBox.pm
 lib/FBP/Children.pm
 lib/FBP/Choice.pm
@@ -20,6 +21,7 @@ lib/FBP/ComboBox.pm
 lib/FBP/Control.pm
 lib/FBP/ControlWithItems.pm
 lib/FBP/CustomControl.pm
+lib/FBP/DatePickerCtrl.pm
 lib/FBP/Dialog.pm
 lib/FBP/DirPickerCtrl.pm
 lib/FBP/FilePickerCtrl.pm
@@ -48,18 +50,23 @@ lib/FBP/Panel.pm
 lib/FBP/Parser.pm
 lib/FBP/Project.pm
 lib/FBP/RadioBox.pm
+lib/FBP/ScrolledWindow.pm
 lib/FBP/SearchCtrl.pm
 lib/FBP/Sizer.pm
 lib/FBP/SizerItem.pm
+lib/FBP/Slider.pm
 lib/FBP/Spacer.pm
 lib/FBP/SpinCtrl.pm
 lib/FBP/SplitterItem.pm
 lib/FBP/SplitterWindow.pm
+lib/FBP/StaticBitmap.pm
 lib/FBP/StaticBoxSizer.pm
 lib/FBP/StaticLine.pm
 lib/FBP/StaticText.pm
 lib/FBP/StatusBar.pm
+lib/FBP/StdDialogButtonSizer.pm
 lib/FBP/TextCtrl.pm
+lib/FBP/ToggleButton.pm
 lib/FBP/Tool.pm
 lib/FBP/ToolBar.pm
 lib/FBP/ToolSeparator.pm
@@ -74,6 +81,7 @@ t/01_compile.t
 t/02_parse.t
 t/03_simple.t
 t/04_padre.t
+t/data/icons/x-document-close.png
 t/data/padre.fbp
 t/data/simple.fbp
 t/data/trivial.fbp

@@ -1,4 +1,4 @@
-package FBP::ListCtrl;
+package FBP::Slider;
 
 use Mouse;
 
@@ -6,107 +6,122 @@ our $VERSION = '0.33';
 
 extends 'FBP::Control';
 
+has value => (
+	is  => 'ro',
+	isa => 'Int',
+);
+
+has minValue => (
+	is  => 'ro',
+	isa => 'Int',
+);
+
+has maxValue => (
+	is  => 'ro',
+	isa => 'Int',
+);
+
 has style => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListBeginDrag => (
+has OnScroll => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListBeginRDrag => (
+has OnScrollTop => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListBeginLabelEdit => (
+has OnScrollBottom => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListEndLabelEdit => (
+has OnScrollLineUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListDeleteItem => (
+has OnScrollLineDown => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListDeleteAllItems => (
+has OnScrollPageUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListItemSelected => (
+has OnScrollPageDown => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListItemDeselected => (
+has OnScrollThumbTrack => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListItemActivated => (
+has OnScrollThumbRelease => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListItemFocused => (
+has OnScrollChanged => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListItemMiddleClick => (
+has OnCommand => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListItemRightClick => (
+has OnCommandTop => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListKeyDown => (
+has OnCommandBottom => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListInsertItem => (
+has OnCommandLineUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListColClick => (
+has OnCommandLineDown => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListColRightClick => (
+has OnCommandPageUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListColBeginDrag => (
+has OnCommandPageDown => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListColDragging => (
+has OnCommandThumbTrack => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListColEndDrag => (
+has OnCommandThumbRelease => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListCacheHint => (
+has OnCommandChanged => (
 	is  => 'ro',
 	isa => 'Str',
 );

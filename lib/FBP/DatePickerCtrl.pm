@@ -1,23 +1,17 @@
-package FBP::Listbook;
+package FBP::DatePickerCtrl;
 
 use Mouse;
 
 our $VERSION = '0.33';
 
 extends 'FBP::Control';
-with    'FBP::Children';
 
 has style => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListbookPageChanged => (
-	is  => 'ro',
-	isa => 'Str',
-);
-
-has OnListbookPageChanging => (
+has OnDateChanged => (
 	is  => 'ro',
 	isa => 'Str',
 );

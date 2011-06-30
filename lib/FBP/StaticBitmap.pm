@@ -1,14 +1,13 @@
-package FBP::Dialog;
+package FBP::StaticBitmap;
 
 use Mouse;
+use Scalar::Util ();
 
 our $VERSION = '0.33';
 
 extends 'FBP::Window';
-with    'FBP::Form';
-with    'FBP::TopLevelWindow';
 
-has style => (
+has bitmap => (
 	is  => 'ro',
 	isa => 'Str',
 );

@@ -1,4 +1,4 @@
-package FBP::DirPickerCtrl;
+package FBP::ToggleButton;
 
 use Mouse;
 
@@ -6,22 +6,17 @@ our $VERSION = '0.33';
 
 extends 'FBP::Control';
 
+has label => (
+	is  => 'ro',
+	isa => 'Str',
+);
+
 has value => (
 	is  => 'ro',
-	isa => 'Str',
+	isa => 'Bool',
 );
 
-has message => (
-	is  => 'ro',
-	isa => 'Str',
-);
-
-has style => (
-	is  => 'ro',
-	isa => 'Str',
-);
-
-has OnDirChanged => (
+has OnToggleButton => (
 	is  => 'ro',
 	isa => 'Str',
 );

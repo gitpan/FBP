@@ -11,7 +11,7 @@ FBP::Window - Base class for all graphical wxWindow objects
 use Mouse;
 use Scalar::Util ();
 
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 extends 'FBP::Object';
 with    'FBP::Children';
@@ -313,6 +313,33 @@ sub header {
 	# If there is no explicit header to load, don't load anything
 	return;
 }
+
+
+
+
+
+######################################################################
+# Events
+
+has OnEraseBackground => (
+	is  => 'ro',
+	isa => 'Str',
+);
+
+has OnPaint => (
+	is  => 'ro',
+	isa => 'Str',
+);
+
+has OnSize => (
+	is  => 'ro',
+	isa => 'Str',
+);
+
+has OnUpdateUI => (
+	is  => 'ro',
+	isa => 'Str',
+);
 
 1;
 

@@ -1,17 +1,17 @@
-package FBP::Spacer;
+package FBP::ScrolledWindow;
 
 use Mouse;
 
 our $VERSION = '0.33';
 
-extends 'FBP::Object';
+extends 'FBP::Window';
 
-has height => (
+has scroll_rate_x => (
 	is  => 'ro',
 	isa => 'Int',
 );
 
-has width => (
+has scroll_rate_y => (
 	is  => 'ro',
 	isa => 'Int',
 );

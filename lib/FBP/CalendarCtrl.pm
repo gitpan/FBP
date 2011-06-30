@@ -1,45 +1,42 @@
-package FBP::TopLevelWindow;
+package FBP::CalendarCtrl;
 
-use Mouse::Role;
+use Mouse;
 
 our $VERSION = '0.33';
 
-has title => (
+extends 'FBP::Control';
+
+has style => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has center => (
+has OnCalendar => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnActivate => (
+has OnCalendarSelChanged => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnActivateApp => (
+has OnCalendarDay => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnClose => (
+has OnCalendarMonth => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnHibernate => (
+has OnCalendarYear => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnIconize => (
-	is  => 'ro',
-	isa => 'Str',
-);
-
-has OnIdle => (
+has OnCalendarWeekDayClicked => (
 	is  => 'ro',
 	isa => 'Str',
 );
