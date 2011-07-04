@@ -1,24 +1,29 @@
-package FBP::ListBox;
+package FBP::AnimationCtrl;
 
 use Mouse;
 
 our $VERSION = '0.34';
 
-extends 'FBP::ControlWithItems';
+extends 'FBP::Control';
 
 has style => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListBox => (
+has animation => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListDClick => (
+has inactive_bitmap => (
 	is  => 'ro',
 	isa => 'Str',
+);
+
+has play => (
+	is  => 'ro',
+	isa => 'Bool',
 );
 
 no Mouse;

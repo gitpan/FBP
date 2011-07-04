@@ -11,7 +11,7 @@ FBP::Window - Base class for all graphical wxWindow objects
 use Mouse;
 use Scalar::Util ();
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Object';
 with    'FBP::Children';
@@ -340,6 +340,9 @@ has OnUpdateUI => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;
 

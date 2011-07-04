@@ -1,22 +1,27 @@
-package FBP::ListBox;
+package FBP::RadioButton;
 
 use Mouse;
 
 our $VERSION = '0.34';
 
-extends 'FBP::ControlWithItems';
+extends 'FBP::Control';
+
+has label => (
+	is  => 'ro',
+	isa => 'Str',
+);
 
 has style => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnListBox => (
+has value => (
 	is  => 'ro',
-	isa => 'Str',
+	isa => 'Bool',
 );
 
-has OnListDClick => (
+has OnRadioButton => (
 	is  => 'ro',
 	isa => 'Str',
 );

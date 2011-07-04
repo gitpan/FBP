@@ -2,7 +2,7 @@ package FBP::MouseEvent;
 
 use Mouse::Role;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 has OnEnterWindow => (
 	is  => 'ro',
@@ -73,5 +73,7 @@ has OnRightUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse::Role;
 
 1;

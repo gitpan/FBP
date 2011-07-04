@@ -2,16 +2,9 @@ package FBP::SearchCtrl;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Control';
-
-
-
-
-
-######################################################################
-# Properties
 
 has value => (
 	is       => 'ro',
@@ -39,13 +32,6 @@ has cancel_button => (
 	default  => 0,
 );
 
-
-
-
-
-######################################################################
-# Events
-
 has OnText => (
 	is  => 'ro',
 	isa => 'Str',
@@ -65,5 +51,8 @@ has OnCancelButton => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

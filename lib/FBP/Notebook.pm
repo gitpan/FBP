@@ -1,12 +1,12 @@
-package FBP::ColourPickerCtrl;
-
-use Mouse;
+package FBP::Notebook;
 
 our $VERSION = '0.34';
 
-extends 'FBP::Control';
+use Mouse;
 
-has colour => (
+extends 'FBP::Window';
+
+has bitmapsize => (
 	is  => 'ro',
 	isa => 'Str',
 );
@@ -16,7 +16,12 @@ has style => (
 	isa => 'Str',
 );
 
-has OnColourChanged => (
+has OnNotebookPageChanged => (
+	is  => 'ro',
+	isa => 'Str',
+);
+
+has OnNotebookPageChanging => (
 	is  => 'ro',
 	isa => 'Str',
 );

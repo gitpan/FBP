@@ -2,16 +2,9 @@ package FBP::MenuItem;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Object';
-
-
-
-
-
-######################################################################
-# Properties
 
 has id => (
 	is  => 'ro',
@@ -63,13 +56,6 @@ has kind => (
 	isa => 'Str',
 );
 
-
-
-
-
-######################################################################
-# Events
-
 has OnMenuSelection => (
 	is  => 'ro',
 	isa => 'Str',
@@ -79,5 +65,8 @@ has OnUpdateUI => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

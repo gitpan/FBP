@@ -2,7 +2,7 @@ package FBP::StaticText;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Control';
 
@@ -16,5 +16,8 @@ has wrap => (
 	isa      => 'Str',
 	default  => '-1',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

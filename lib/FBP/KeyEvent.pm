@@ -2,7 +2,7 @@ package FBP::KeyEvent;
 
 use Mouse::Role;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 has OnChar => (
 	is  => 'ro',
@@ -18,5 +18,7 @@ has OnKeyUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse::Role;
 
 1;

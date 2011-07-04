@@ -2,7 +2,7 @@ package FBP::ListbookPage;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Object';
 with    'FBP::Children';
@@ -16,5 +16,8 @@ has select => (
 	is  => 'ro',
 	isa => 'Int',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

@@ -6,7 +6,7 @@ BEGIN {
 	$^W = 1;
 }
 
-use Test::More tests => 273;
+use Test::More tests => 323;
 use Test::NoWarnings;
 use Scalar::Util 'refaddr';
 use File::Spec::Functions ':ALL';
@@ -73,7 +73,7 @@ isa_ok( $dialog4[0], 'FBP::Dialog' );
 
 # Multiple-search query with multiple results
 my @window = $project->find( isa => 'FBP::Window' );
-is( scalar(@window), 50, '->find(multiple)' );
+is( scalar(@window), 61, '->find(multiple)' );
 foreach ( @window ) {
 	isa_ok( $_, 'FBP::Window' );
 }
@@ -484,3 +484,77 @@ is( $buttonsizer->No,          1, '->No'          );
 is( $buttonsizer->Cancel,      1, '->Cancel'      );
 is( $buttonsizer->Help,        0, '->Help'        );
 is( $buttonsizer->ContextHelp, 0, '->ContextHelp' );
+
+# GridBagSizer properties
+my $gridbag = $fbp->find_first(
+	isa => 'FBP::GridBagSizer',
+);
+isa_ok( $gridbag, 'FBP::GridBagSizer' );
+is( $gridbag->name, 'gbSizer1', '->name' );
+is( $gridbag->empty_cell_size, '', '->empty_cell_sizer' );
+is( $gridbag->vgap, '0', '->vgap' );
+is( $gridbag->hgap, '10', '->hgap' );
+is( $gridbag->growablerows, '0', '->growablerows' );
+is( $gridbag->growablecols, '0', '->growablecols' );
+is( $gridbag->flexible_direction, 'wxBOTH', '->flexible_direction' );
+is( $gridbag->non_flexible_grow_mode, 'wxFLEX_GROWMODE_SPECIFIED', '->non_flexible_grow_mode' );
+
+# GridBagSizerItem properties
+my $gridbagsizeritem = $fbp->find_first(
+	isa => 'FBP::GridBagSizerItem',
+);
+isa_ok( $gridbagsizeritem, 'FBP::GridBagSizerItem' );
+ok( $gridbagsizeritem->does('FBP::SizerItemBase'), 'DOES sizer item base' );
+is( $gridbagsizeritem->row, 0, '->row' );
+is( $gridbagsizeritem->column, 0, '->column' );
+is( $gridbagsizeritem->rowspan, 1, '->rowspan' );
+is( $gridbagsizeritem->colspan, 2, '->colspan' );
+is( $gridbagsizeritem->border, 5, '->border' );
+is( $gridbagsizeritem->flag, 'wxALIGN_CENTER_HORIZONTAL|wxALL', '->flag' );
+
+# Notebook properties
+my $notebook = $fbp->find_first(
+	isa => 'FBP::Notebook',
+);
+isa_ok( $notebook, 'FBP::Notebook' );
+is( $notebook->name, 'm_notebook1', '->name' );
+is( $notebook->bitmapsize, '', '->bitmapsize' );
+is( $notebook->style, '', '->style' );
+
+# NotebookPage properties
+my $notebookpage = $fbp->find_first(
+	isa => 'FBP::NotebookPage',
+);
+isa_ok( $notebookpage, 'FBP::NotebookPage' );
+is( $notebookpage->label, 'Checkboxes', '->label' );
+is( $notebookpage->bitmap, '', '->bitmap' );
+is( $notebookpage->select, 1, '->select' );
+
+# RadioButton properties
+my $radiobutton = $fbp->find_first(
+	isa => 'FBP::RadioButton',
+);
+isa_ok( $radiobutton, 'FBP::RadioButton' );
+is( $radiobutton->name, 'm_radioBtn1', '->name' );
+is( $radiobutton->label, 'Choose Me!', '->label' );
+is( $radiobutton->style, 'wxRB_GROUP', '->style' );
+is( $radiobutton->value, 0, '->value' );
+
+# Animation properties
+my $animation = $fbp->find_first(
+	isa => 'FBP::AnimationCtrl',
+);
+isa_ok( $animation, 'FBP::AnimationCtrl' );
+is( $animation->name, 'm_animCtrl1', '->name' );
+is( $animation->style, 'wxAC_DEFAULT_STYLE', '->style' );
+is( $animation->animation, '', '->animation' );
+is( $animation->inactive_bitmap, '', '->inactive_bitmap' );
+is( $animation->play, 0, '->play' );
+
+# TreeCtrl properties
+my $treectrl = $fbp->find_first(
+	isa => 'FBP::TreeCtrl',
+);
+isa_ok( $treectrl, 'FBP::TreeCtrl' );
+is( $treectrl->name, 'm_treeCtrl1', '->name' );
+is( $treectrl->style, 'wxTR_DEFAULT_STYLE', '->style' );

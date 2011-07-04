@@ -12,7 +12,7 @@ FBP::Children - Role for objects which can contain other objects
 
 use Mouse::Role;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 has children => (
 	is      => 'ro',
@@ -118,6 +118,8 @@ sub find_first {
 
 	return undef;
 }
+
+no Mouse::Role;
 
 1;
 

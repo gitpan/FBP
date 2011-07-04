@@ -1,42 +1,33 @@
-package FBP::CalendarCtrl;
+package FBP::TreeCtrl;
 
 use Mouse;
 
 our $VERSION = '0.34';
 
 extends 'FBP::Control';
+with    'FBP::TreeCtrlBase';
 
 has style => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCalendar => (
+has OnTreeGetInfo => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCalendarSelChanged => (
+has OnTreeSetInfo => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCalendarDay => (
+has OnTreeItemGetTooltip => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCalendarMonth => (
-	is  => 'ro',
-	isa => 'Str',
-);
-
-has OnCalendarYear => (
-	is  => 'ro',
-	isa => 'Str',
-);
-
-has OnCalendarWeekDayClicked => (
+has OnTreeStateImageClick => (
 	is  => 'ro',
 	isa => 'Str',
 );

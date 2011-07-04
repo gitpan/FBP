@@ -12,7 +12,7 @@ FBP::Object - Base class for all wxFormBuilder objects
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 # =pod
 # 
@@ -53,6 +53,9 @@ has permission => (
 	required => 1,
 	default  => 'none',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;
 

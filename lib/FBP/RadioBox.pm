@@ -2,7 +2,7 @@ package FBP::RadioBox;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::ControlWithItems';
 
@@ -34,5 +34,8 @@ has OnRadioBox => (
 	is       => 'ro',
 	isa      => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

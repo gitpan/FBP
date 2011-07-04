@@ -2,16 +2,9 @@ package FBP::TextCtrl;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Control';
-
-
-
-
-
-######################################################################
-# Properties
 
 has value => (
 	is       => 'ro',
@@ -32,13 +25,6 @@ has maxlength => (
 	default  => 0,
 );
 
-
-
-
-
-######################################################################
-# Events
-
 has OnText => (
 	is  => 'ro',
 	isa => 'Str',
@@ -58,5 +44,8 @@ has OnTextMaxLen => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

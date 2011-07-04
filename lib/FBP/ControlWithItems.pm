@@ -2,7 +2,7 @@ package FBP::ControlWithItems;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Control';
 
@@ -20,5 +20,8 @@ sub items {
 	}
 	return @choices;
 }
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

@@ -2,30 +2,22 @@ package FBP::FlexGridSizer;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
-extends 'FBP::GridSizer';
+extends 'FBP::Sizer';
+with    'FBP::FlexGridSizerBase';
 
-has flexible_direction => (
+has rows => (
 	is  => 'ro',
-	isa => 'Str',
+	isa => 'Int',
 );
 
-has non_flexible_grow_mode => (
+has cols => (
 	is  => 'ro',
-	isa => 'Str',
+	isa => 'Int',
 );
 
-has growablecols => (
-	is      => 'ro',
-	isa     => 'Str',
-	default => '',
-);
-
-has growablerows => (
-	is      => 'ro',
-	isa     => 'Str',
-	default => '',
-);
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

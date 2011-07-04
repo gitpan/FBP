@@ -2,7 +2,7 @@ package FBP::SplitterWindow;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Window';
 
@@ -60,5 +60,8 @@ has OnSplitterDClick => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

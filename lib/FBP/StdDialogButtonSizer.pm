@@ -2,16 +2,9 @@ package FBP::StdDialogButtonSizer;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Sizer';
-
-
-
-
-
-######################################################################
-# Properties
 
 has OK => (
 	is  => 'ro',
@@ -53,13 +46,6 @@ has ContextHelp => (
 	isa => 'Bool',
 );
 
-
-
-
-
-######################################################################
-# Events
-
 has OnOKButtonClick => (
 	is  => 'ro',
 	isa => 'Str',
@@ -99,5 +85,8 @@ has OnContextHelpButtonClick => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

@@ -2,7 +2,7 @@ package FBP::ComboBox;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::ControlWithItems';
 
@@ -32,5 +32,8 @@ has OnTextEnter => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

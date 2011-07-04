@@ -2,7 +2,7 @@ package FBP::Sizer;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Object';
 with    'FBP::Children';
@@ -13,5 +13,8 @@ has name => (
 	isa      => 'Str',
 	required => 1,
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

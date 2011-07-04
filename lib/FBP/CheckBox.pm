@@ -2,7 +2,7 @@ package FBP::CheckBox;
 
 use Mouse;
 
-our $VERSION = '0.33';
+our $VERSION = '0.34';
 
 extends 'FBP::Control';
 
@@ -15,5 +15,8 @@ has OnCheckBox => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
+no Mouse;
+__PACKAGE__->meta->make_immutable;
 
 1;

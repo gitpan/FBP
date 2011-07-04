@@ -1,4 +1,4 @@
-package FBP::SizerItem;
+package FBP::GridBagSizerItem;
 
 use Mouse;
 
@@ -8,7 +8,22 @@ extends 'FBP::Object';
 with    'FBP::Children';
 with    'FBP::SizerItemBase';
 
-has proportion => (
+has row => (
+	is  => 'ro',
+	isa => 'Int',
+);
+
+has column => (
+	is  => 'ro',
+	isa => 'Int',
+);
+
+has rowspan => (
+	is  => 'ro',
+	isa => 'Int',
+);
+
+has colspan => (
 	is  => 'ro',
 	isa => 'Int',
 );
