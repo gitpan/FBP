@@ -17,6 +17,8 @@ lib/FBP/CalendarCtrl.pm
 lib/FBP/CheckBox.pm
 lib/FBP/Children.pm
 lib/FBP/Choice.pm
+lib/FBP/Choicebook.pm
+lib/FBP/ChoicebookPage.pm
 lib/FBP/ColourPickerCtrl.pm
 lib/FBP/ComboBox.pm
 lib/FBP/Control.pm
@@ -34,6 +36,8 @@ lib/FBP/Form.pm
 lib/FBP/FormPanel.pm
 lib/FBP/Frame.pm
 lib/FBP/Gauge.pm
+lib/FBP/GenericDirCtrl.pm
+lib/FBP/Grid.pm
 lib/FBP/GridBagSizer.pm
 lib/FBP/GridBagSizerItem.pm
 lib/FBP/GridSizer.pm
@@ -57,6 +61,8 @@ lib/FBP/Parser.pm
 lib/FBP/Project.pm
 lib/FBP/RadioBox.pm
 lib/FBP/RadioButton.pm
+lib/FBP/RichTextCtrl.pm
+lib/FBP/ScrollBar.pm
 lib/FBP/ScrolledWindow.pm
 lib/FBP/SearchCtrl.pm
 lib/FBP/Sizer.pm
@@ -64,6 +70,7 @@ lib/FBP/SizerItem.pm
 lib/FBP/SizerItemBase.pm
 lib/FBP/Slider.pm
 lib/FBP/Spacer.pm
+lib/FBP/SpinButton.pm
 lib/FBP/SpinCtrl.pm
 lib/FBP/SplitterItem.pm
 lib/FBP/SplitterWindow.pm

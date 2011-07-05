@@ -1,4 +1,4 @@
-package FBP::TextCtrl;
+package FBP::RichTextCtrl;
 
 use Mouse;
 

@@ -1,4 +1,4 @@
-package FBP::Slider;
+package FBP::ScrollBar;
 
 use Mouse;
 
@@ -11,12 +11,17 @@ has value => (
 	isa => 'Int',
 );
 
-has minValue => (
+has range => (
 	is  => 'ro',
 	isa => 'Int',
 );
 
-has maxValue => (
+has thumbsize => (
+	is  => 'ro',
+	isa => 'Int',
+);
+
+has pagesize => (
 	is  => 'ro',
 	isa => 'Int',
 );
@@ -76,55 +81,56 @@ has OnScrollChanged => (
 	isa => 'Str',
 );
 
-has OnCommand => (
+has OnCommandScroll => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandTop => (
+has OnCommandScrollTop => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandBottom => (
+has OnCommandScrollBottom => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandLineUp => (
+has OnCommandScrollLineUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandLineDown => (
+has OnCommandScrollLineDown => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandPageUp => (
+has OnCommandScrollPageUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandPageDown => (
+has OnCommandScrollPageDown => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandThumbTrack => (
+has OnCommandScrollThumbTrack => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandThumbRelease => (
+has OnCommandScrollThumbRelease => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnCommandChanged => (
+has OnCommandScrollChanged => (
 	is  => 'ro',
 	isa => 'Str',
 );
+
 
 no Mouse;
 __PACKAGE__->meta->make_immutable;

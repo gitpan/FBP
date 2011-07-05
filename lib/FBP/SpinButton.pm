@@ -1,4 +1,4 @@
-package FBP::AnimationCtrl;
+package FBP::SpinButton;
 
 use Mouse;
 
@@ -11,19 +11,19 @@ has style => (
 	isa => 'Str',
 );
 
-has animation => (
+has OnSpin => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has inactive_bitmap => (
+has OnSpinUp => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has play => (
+has OnSpinDown => (
 	is  => 'ro',
-	isa => 'Bool',
+	isa => 'Str',
 );
 
 no Mouse;

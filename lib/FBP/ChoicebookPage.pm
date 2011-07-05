@@ -1,19 +1,20 @@
-package FBP::Button;
+package FBP::ChoicebookPage;
 
 use Mouse;
 
 our $VERSION = '0.35';
 
-extends 'FBP::Control';
+extends 'FBP::Object';
+with    'FBP::Children';
 
 has label => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has OnButtonClick => (
+has select => (
 	is  => 'ro',
-	isa => 'Str',
+	isa => 'Int',
 );
 
 no Mouse;

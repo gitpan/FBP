@@ -1,29 +1,25 @@
-package FBP::AnimationCtrl;
+package FBP::Choicebook;
 
 use Mouse;
 
 our $VERSION = '0.35';
 
 extends 'FBP::Control';
+with    'FBP::Children';
 
 has style => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has animation => (
+has OnChoicebookPageChanged => (
 	is  => 'ro',
 	isa => 'Str',
 );
 
-has inactive_bitmap => (
+has OnChoicebookPageChanging => (
 	is  => 'ro',
 	isa => 'Str',
-);
-
-has play => (
-	is  => 'ro',
-	isa => 'Bool',
 );
 
 no Mouse;
