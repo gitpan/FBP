@@ -42,7 +42,7 @@ lib/FBP/GridBagSizer.pm
 lib/FBP/GridBagSizerItem.pm
 lib/FBP/GridSizer.pm
 lib/FBP/HtmlWindow.pm
-lib/FBP/HyperLink.pm
+lib/FBP/HyperlinkCtrl.pm
 lib/FBP/KeyEvent.pm
 lib/FBP/Listbook.pm
 lib/FBP/ListbookPage.pm
@@ -93,6 +93,7 @@ LICENSE
 Makefile.PL
 MANIFEST			This list of files
 META.yml
+MYMETA.json
 README
 t/01_compile.t
 t/02_parse.t
