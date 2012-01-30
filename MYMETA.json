@@ -54,6 +54,6 @@
       },
       "x_ChangeLog" : "http://fisheye2.atlassian.com/changelog/cpan/trunk/FBP"
    },
-   "version" : "0.40",
+   "version" : "0.41",
    "x_module_name" : "FBP"
 }

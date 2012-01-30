@@ -33,4 +33,4 @@ resources:
   ChangeLog: http://fisheye2.atlassian.com/changelog/cpan/trunk/FBP
   license: http://dev.perl.org/licenses/
   repository: http://svn.ali.as/cpan/trunk/FBP
-version: 0.40
+version: 0.41
